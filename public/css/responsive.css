@@ -29,12 +29,31 @@ Desktops (≥1200px)
        width: 0em;
        padding: 0em;
     }
+
+    #desktop {
+        display: none;
+    }
+
+    .moreBox {
+        width: 33.333%;
+    }
+
+
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .news-section-wrapper {
         padding: 0 40px
     }
+
+    #desktop {
+        display: none;
+    }
+
+    .moreBox {
+        width: 33.333%;
+    }
+
 
 
 }
@@ -407,7 +426,12 @@ Desktops (≥992px)
        height: 0em;
        width: 0em;
        padding: 0em;
-}
+    }
+
+    .moreBox {
+        width: 50%;
+    }
+
 
 
 /*
@@ -477,6 +501,11 @@ Tablets (≥768px)
         width: 470px;
     }
 
+    .moreBox {
+        width: 50%;
+    }
+
+
 
 }
 
@@ -532,6 +561,9 @@ Tablets (≥768px)
     .contact form {
         grid-gap:20px;
     }
+
+
+  
 
 
 
@@ -633,6 +665,11 @@ s
         padding: 20px;
         width: 100%;
     }
+
+    .moreBox {
+        width: 100%;
+    }
+
 
 }
 
