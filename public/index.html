@@ -99,22 +99,41 @@
             </div>
         </header>
         <!-- end: Header -->
+       
         <!-- Inspiro Slider -->
         <div id="slider" class="inspiro-slider slider-fullscreen arrows-large arrows-creative dots-creative">
+           
             <!-- Slide 1 -->
-            <div class="slide background-overlay-gradient kenburns background-image" style="background-image:url('images/portfolio/womanface.jpg');">
+            <div class="slide background-overlay-gradient kenburns background-image" style="background-image:url('images/face2.jpg');">
+ 
                 <div class="container">
-                    <div class="slide-captions text-center text-light strong" data-animate="fadeInUp" data-animate-delay="600">
+                    <div id="particles-js" class="particles"></div>
+                    <div class="slide-captions text-center text-light strong" data-animate="fadeIn" data-animate-delay="600">
                         <!-- Captions -->
                         <h1 id="title" data-text="INBLOCK">INBLOCK</h1>
-                        <p id="subtitle">Web Design. App Development.</p>
-                        <a href="#welcome" class="btn btn-outline text-light scroll-to">GET STARTED</a>
+                       
+                        <h4 style=" letter-spacing: 0.14em;">
+                            <span>Human Centred </span> 
+                            
+                                <span class="text-rotator" data-animation="fadeInDown" data-speed="3000">Web Design, Technology, Blockchain, Developers</span> 
+                         
+                        </h4>
                         <!-- end: Captions -->
-                    </div>
+                        <!-- Clock -->
+                        <canvas id="canvas" width="500px" height="500px"></canvas><br>
+                        <!-- end: Clock -->
+                        <a href="#welcome" id="start" class="btn btn-md btn-outline text-light scroll-to">
+                           GET STARTED
+                        </a>
+                    
+                    </div>     
                 </div>
+          
             </div>
             <!-- end: Slide 1 -->
+        
         </div>
+ 
         <!--end: Inspiro Slider -->
         <!-- WELCOME -->
         <section id="welcome" class="p-b-0">
@@ -283,9 +302,9 @@
                 <!-- portfolio item -->
                 <div id="blockchain" class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-Media">
                     <div class="portfolio-item-wrap">
-                        <a href="https://markbayley.github.io/markbayley/blotto/build/index.html">
+                        <a href="https://markbayley.github.io/blotto/build/index.html">
                             <div class="portfolio-image">
-                                <a href="https://markbayley.github.io/markbayley/blotto/build/index.html">
+                                <a href="https://markbayley.github.io/blotto/build/index.html">
                                     <img src="images/lotto2.png" alt=""></a>
                             </div>
                             <div class="portfolio-description">
@@ -452,13 +471,13 @@
         </div>
     </section>
     <!-- end: SERVICES -->
+     <!-- PRICING TABLES -->
     <div class="heading-text heading-section text-center">
         <h2>SELECT A PRODUCT</h2>
     </div>
     <!-- MOBILE Pricing Table  -->
     <section id="prices" data-parallax-image="images/stag.jpg">
         <div class="container">
-            <!-- Pricing Table -->
             <div class="row-lg-4">
                 <div class="card">
                   
@@ -495,6 +514,7 @@
             </div>
         </div>
     </section>
+     <!-- end MOBILE Pricing Table  -->
     <!-- DESKTOP Pricing Table -->
     <section id="content" data-parallax-image="images/rail2.jpg" style="background-image: cover;">
         <div class="container-fluid">
@@ -610,7 +630,6 @@
         </div>
     </section>
     <!-- end: COUNTERS -->
-
     <!-- Contact Form -->
     <div id="contact" class="container">
         <div class="heading-text heading-section text-center">
@@ -722,6 +741,74 @@
     <script src="js/contact.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/load-more-button.js"></script>
+
+    <!-- Partical Js files  -->
+<script src="js/plugins/components/particles.js" type="text/javascript"></script>
+<script src="js/plugins/components/particles-animation.js" type="text/javascript"></script>
+<!-- end: Partical Js files  -->
+<script>
+var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+
+		ctx.strokeStyle = '#13e8ce';
+		ctx.lineWidth = 17;
+		ctx.shadowBlur= 15;
+		ctx.shadowColor = '#13e8ce';
+       
+        
+
+		function degToRad(degree){
+			var factor = Math.PI/180;
+			return degree*factor;
+		}
+
+		function renderTime(){
+			var now = new Date();
+			var today = now.toDateString();
+			var time = now.toLocaleTimeString();
+			var hrs = now.getHours();
+			var min = now.getMinutes();
+			var sec = now.getSeconds();
+			var mil = now.getMilliseconds();
+			var smoothsec = sec+(mil/1000);
+            var smoothmin = min+(smoothsec/60);
+     
+
+			//Background
+			//gradient = ctx.createRadialGradient(250, 250, 5, 250, 250, 300);
+			//gradient.addColorStop(0, "#03303a");
+			//gradient.addColorStop(1, "#1b6280");
+			//ctx.fillStyle = gradient;
+			ctx.fillStyle = '#03303a';
+			ctx.fillRect(0, 0, 500, 500);
+			//Hours
+			ctx.beginPath();
+			ctx.arc(250,250,200, degToRad(270), degToRad((hrs*30)-90));
+			ctx.stroke();
+			//Minutes
+			ctx.beginPath();
+			ctx.arc(250,250,170, degToRad(270), degToRad((smoothmin*6)-90));
+			ctx.stroke();
+			//Seconds
+			ctx.beginPath();
+			ctx.arc(250,250,140, degToRad(270), degToRad((smoothsec*6)-90));
+			ctx.stroke();
+			//Date
+			ctx.font = "20px Helvetica";
+			ctx.fillStyle = 'rgba(00, 255, 255, 1)'
+			ctx.fillText(today, 175, 230);
+			//Time
+			ctx.font = "20px Helvetica";
+			ctx.fillStyle = 'rgba(00, 255, 255, 0.7)';
+			ctx.fillText(time+":"+mil, 175, 490);
+
+            
+       
+     
+
+		}
+		setInterval(renderTime, 40);
+</script>
 </body>
 
 </html>
