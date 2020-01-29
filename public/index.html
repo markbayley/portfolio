@@ -19,6 +19,8 @@
     <link href="https://fonts.googleapis.com/css?family=Exo|Ubuntu&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+
+ 
 </head>
 
 <body>
@@ -37,42 +39,8 @@
                     <!--End: Logo-->
                     <!-- Search -->
                     <!-- end: search -->
-                    <!--Header Extras-->
-                    <div class="header-extras">
-                        <ul>
-                            <li class="d-none d-sm-block">
-                                <!--shopping cart-->
-                                <div id="shopping-cart" class="p-dropdown">
-                                    <a href="#"><span class="shopping-cart-items total-count" style="color: black"></span><i class="icon-shopping-cart1"></i></a>
-                                    <div class="p-dropdown-content ">
-                                        <div class="widget-mycart">
-                                            <h4>My Cart</h4>
-                                            <div class="modal-body">
-                                                <table class="show-cart table">
-                                                </table>
-                                            </div>
-                                            <div class="cart-total">
-                                                <div class="cart-total-labels" style="padding: 12px">
-                                                    <span>Subtotal</span>
-                                                    <span>Taxes</span>
-                                                    <span><strong>Total</strong></span>
-                                                </div>
-                                                <div class="cart-total-prices" style="padding-right:75px">
-                                                    <span class="subtotal-cart"></span>
-                                                    <span>8%</span>
-                                                    <span class="total-cart"><strong></strong></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="cart-buttons text-right">
-                                            <a href="checkout.html"><button class="btn btn-outline btn-xs">Checkout</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--end: shopping cart-->
-                            </li>
-                        </ul>
-                    </div>
+                    <!--Header Extras--> 
+                    
                     <!--end: Header Extras-->
                     <!--Navigation Resposnive Trigger-->
                     <div id="mainMenu-trigger">
@@ -112,7 +80,7 @@
                         <!-- Captions -->
                         <h1 id="title" data-text="INBLOCK">INBLOCK</h1>
                        
-                        <h4 style=" letter-spacing: 0.14em;">
+                        <h4>
                             <span>Human Centred </span> 
                             
                                 <span class="text-rotator" data-animation="fadeInDown" data-speed="3000">Web Design, Technology, Blockchain, Developers</span> 
@@ -120,11 +88,17 @@
                         </h4>
                         <!-- end: Captions -->
                         <!-- Clock -->
-                        <canvas id="canvas" width="500px" height="500px"></canvas><br>
+                        <canvas id="canvas" class="btn-outline-light scroll-to" width="420px" height="420px" style="border: 2px solid #13e8ce; "></canvas><br>
                         <!-- end: Clock -->
-                        <a href="#welcome" id="start" class="btn btn-md btn-outline text-light scroll-to">
+                       
+                        <a id="start" class="btn btn-md btn-outline text-light scroll-to" onclick="play()" href="#welcome">
                            GET STARTED
                         </a>
+                        <audio id="beep">
+                            <source src="audio/beep.wav"></source>
+                            <source src="audio/beep.ogg"></source>
+                        </audio>
+                       
                     
                     </div>     
                 </div>
@@ -136,9 +110,9 @@
  
         <!--end: Inspiro Slider -->
         <!-- WELCOME -->
-        <section id="welcome" class="p-b-0">
+        <section id="welcome">
             <div class="container">
-                <div class="heading-text heading-section text-center m-b-40" data-animate="fadeInUp">
+                <div class="heading-text heading-section text-center" data-animate="fadeInUp">
                     <h2>WHAT WE DO</h2>
                     <span class="lead">
                         We specialize in building modern, clean and responsive websites that get results.</span><br>
@@ -146,6 +120,29 @@
             </div>
         </section>
         <!-- end: WELCOME -->
+         <!-- PROCESS BOXES -->
+        <section class="box-fancy section-fullwidth text-light" style="padding-bottom: 0px; padding-top: 2%" >
+            <div class="row">
+                <div style="background-color: #3D4045" class="col-lg-4">
+                    <h1 class="text-lg text-uppercase">01.</h1>
+                    <h3>CONCEPT</h3>
+                    <span>The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. </span>
+                </div>
+
+                <div style="background-color: #505358" class="col-lg-4">
+                    <h1 class="text-lg text-uppercase">02.</h1>
+                    <h3>DEVELOPMENT</h3>
+                    <span>The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. </span>
+                </div>
+
+                <div style="background-color: #3D4045" class="col-lg-4">
+                    <h1 class="text-lg text-uppercase">03.</h1>
+                    <h3>TESTING</h3>
+                    <span>The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. </span>
+                </div>
+            </div>
+        </section>
+        <!-- end: PROCESS BOXES -->
         <!-- WHAT WE DO -->
         <section id="about" class="background-grey">
             <div class="container">
@@ -363,25 +360,25 @@
         </div>
     </div>
     <!-- end: portfolio item -->
-    <div class="" style="display: none;">
+    <div style="display: none;">
         <div class="row">
             <!-- portfolio item -->
-            <div id="" class="portfolio-item img-zoom blogBox moreBox">
+            <div class="blogBox moreBox">
             </div>
             <!-- end: portfolio item -->
             <!-- portfolio item -->
-            <div id="" class="portfolio-item img-zoom blogBox moreBox">
+            <div class="blogBox moreBox">
             </div>
             <!-- end: portfolio item -->
             <!-- portfolio item -->
-            <div id="" class="portfolio-item img-zoom  blogBox moreBox">
+            <div class="blogBox moreBox">
             </div>
             <!-- end: portfolio item -->
         </div>
     </div>
     </div>
     <!-- end: Portfolio Items -->
-    <div>
+      <div>
         <div class="row">
             <div id="" class="blogBox moreBox" style="display: none;">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/aZi6jSGpxM0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -394,6 +391,7 @@
             </div>
         </div>
     </div>
+
     <!-- Load More -->
     <div id="loadMore" style="text-align: center; margin-top: 60px !important;">
         <a href="#" class="btn btn-rounded btn-light"><i class="icon-refresh-cw"></i> Load More</a>
@@ -476,7 +474,7 @@
         <h2>SELECT A PRODUCT</h2>
     </div>
     <!-- MOBILE Pricing Table  -->
-    <section id="prices" data-parallax-image="images/stag.jpg">
+    <section id="prices" data-parallax-image="images/face7.png">
         <div class="container">
             <div class="row-lg-4">
                 <div class="card">
@@ -516,7 +514,7 @@
     </section>
      <!-- end MOBILE Pricing Table  -->
     <!-- DESKTOP Pricing Table -->
-    <section id="content" data-parallax-image="images/rail2.jpg" style="background-image: cover;">
+    <section id="content" data-parallax-image="images/face6.jpg" style="background-image: cover;">
         <div class="container-fluid">
             <div class="container-fullscreen">
                 <div class="text-middle text-center">
@@ -537,7 +535,7 @@
                                             <li><i class="fa fa-server"></i>Mobile Ready</li>
                                         </ul>
                                         <div class="plan-button">
-                                            <a href="cart.html" data-name="Basic_Website" data-price="895" class="add-to-cart btn">Buy Now</a>
+                                            <a href="#contact" class="scroll-to add-to-cart btn" data-name="Basic_Website" data-price="895">Get Quote</a>
                                         </div>
                                     </div>
                                 </div>
@@ -557,7 +555,7 @@
                                             <li><i class="fa fa-user"></i>Upload Photos</li>
                                         </ul>
                                         <div class="plan-button">
-                                            <a href="cart.html" data-name="Interactive_Website" data-price="1595" class="add-to-cart btn">Buy Now</a>
+                                            <a href="#contact" class="scroll-to add-to-cart btn" data-name="Interactive_Website" data-price="1595">Get Quote</a>
                                         </div>
                                     </div>
                                 </div>
@@ -578,7 +576,7 @@
                                             <li><i class="fa fa-user"></i>Test & Deploy</li>
                                         </ul>
                                         <div class="plan-button">
-                                            <a href="cart.html" data-name="Android_App" data-price="1895" class="add-to-cart btn">Buy Now</a>
+                                            <a href="#contact" class="scroll-to add-to-cart btn" data-name="Android_App" data-price="1895">Get Quote</a>
                                         </div>
                                     </div>
                                 </div>
@@ -643,11 +641,7 @@
                   
                     <li><i class="fa fa-envelope"></i> inblockdesign@outlook.com</li>
                 </ul>
-                <div class="mb-4 social-icons social-icons-medium social-icons-colored">
-                    <li class="social-facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="social-twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li class="social-instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                </div>
+              
             </div>
             <div class="contact">
                 <h3>Email Us</h3>
@@ -683,12 +677,25 @@
     <!-- end: Contact Form -->
     <div class="space"></div>
     <!-- Footer -->
+    
+   
     <section>
-        <div class="container" style="padding-left: 23%">
+        <div class="container" style="padding-left: 23%;">   
             <div class="row">
                 <div class="copyright-content">
+                    
                     <div class="container text-center">
+                      
+                        <div class="solcial-icons social-icons-large">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                           <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                     
+               
+                     
                         <a>Terms & Conditions</a> | <a>Privacy Policy</a> | <a>Contact</a>
+                        
                         <div class="copyright-text text-center">
                             &copy; 2020 Inblock Design Pty Ltd. All Rights Reserved.
                         </div>
@@ -698,29 +705,7 @@
         </div>
     </section>
     <!-- end: Footer -->
-    <!-- Modal -->
-    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">My Cart</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <table class="show-cart table">
-                    </table>
-                    <div>Total price: $<span class="total-cart"></span></div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-sm">Order now</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end: Modal -->
+  
     </div>
     <!-- end: Body Inner -->
     <!-- Scroll top -->
@@ -780,35 +765,54 @@ var canvas = document.getElementById("canvas");
 			//gradient.addColorStop(1, "#1b6280");
 			//ctx.fillStyle = gradient;
 			ctx.fillStyle = '#03303a';
-			ctx.fillRect(0, 0, 500, 500);
+			ctx.fillRect(0, 0, 420, 420);
 			//Hours
 			ctx.beginPath();
-			ctx.arc(250,250,200, degToRad(270), degToRad((hrs*30)-90));
+			ctx.arc(210,210,200, degToRad(270), degToRad((hrs*30)-90));
 			ctx.stroke();
 			//Minutes
 			ctx.beginPath();
-			ctx.arc(250,250,170, degToRad(270), degToRad((smoothmin*6)-90));
+			ctx.arc(210,210,170, degToRad(270), degToRad((smoothmin*6)-90));
 			ctx.stroke();
 			//Seconds
 			ctx.beginPath();
-			ctx.arc(250,250,140, degToRad(270), degToRad((smoothsec*6)-90));
+			ctx.arc(210,210,140, degToRad(270), degToRad((smoothsec*6)-90));
 			ctx.stroke();
 			//Date
 			ctx.font = "20px Helvetica";
-			ctx.fillStyle = 'rgba(00, 255, 255, 1)'
-			ctx.fillText(today, 175, 230);
+			ctx.fillStyle = 'rgba(55, 255, 255, 1)'
+			ctx.fillText(today, 140, 155);
 			//Time
 			ctx.font = "20px Helvetica";
-			ctx.fillStyle = 'rgba(00, 255, 255, 0.7)';
-			ctx.fillText(time+":"+mil, 175, 490);
-
-            
-       
-     
-
+			ctx.fillStyle = 'rgba(00, 255, 255, 1)';
+			ctx.fillText(time+":"+mil, 145, 255);
+          
 		}
 		setInterval(renderTime, 40);
 </script>
+
+<script>
+  $(function() {
+  $('#start').hover(function() {
+    $('#canvas').css('opacity', '0.7');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('#canvas').css('opacity', '0.2');
+  });
+});
+</script>
+
+
+
+
+      <script>
+      function play() {
+        var audio = document.getElementById("beep");
+        audio.play();
+      }
+    </script>
+
+
 </body>
 
 </html>

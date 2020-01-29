@@ -42,7 +42,7 @@ body {
 #title {
   cursor: default;
   
-  background-image: linear-gradient( to bottom left, #1ee5da, #199b74);
+  background-image: linear-gradient( to bottom left, rgba(00, 255, 255, 1), #199b74);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent; 
@@ -55,8 +55,24 @@ body {
   cursor: default;
   text-shadow: 2px 1px 1px darkslategrey;
   color: white !important; 
+  letter-spacing: .075em;;
 
 }
+
+#canvas {
+  opacity: 0.2;
+  border-radius: 50%;
+
+}
+
+#start {
+  position: absolute;
+  left: 45%;
+  top: 55%;
+
+}
+
+
 
 
 
