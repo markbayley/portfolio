@@ -37,7 +37,7 @@
 /* ----------------------------------------------------------------
     BODY
 -----------------------------------------------------------------*/
-@media (min-width: 1px) and (max-width: 991px) {
+@media (min-width: 1px) and (max-width: 1024px) {
   #header .container,
   #header .header-inner .container,
   #page-menu .container,
@@ -160,7 +160,7 @@ section {
   #page-title[data-parallax-image] .breadcrumb ul li a {
     color: #ffffff; }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   #page-title {
     padding: 50px 0 !important; }
     #page-title .page-title > h1 {
@@ -240,7 +240,7 @@ section {
       border-left-width: 1px;
       left: 0; }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   #page-content:not(.no-sidebar).sidebar-both > .container > .row .content,
   #page-content:not(.no-sidebar).sidebar-both > .container-wide > .row .content,
   #page-content:not(.no-sidebar).sidebar-both > .container-fluid > .row .content {
@@ -276,7 +276,7 @@ section {
     .sidebar-both .content + .sidebar:before {
       border-right-width: 0;
       border-left-width: 0; } }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   #page-content {
     padding: 20px 0 20px 0; } }
 /*--------------------------------------------------------
@@ -395,7 +395,7 @@ section {
     .portfolio-5-columns .portfolio-item.large-width {
       width: 50%; } }
 /*Tablet Landscape*/
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   /*Grid columns: 6,5,4*/
   .grid-6-columns .grid-item,
   .post-6-columns .post-item,
@@ -681,7 +681,7 @@ section {
 .sidebar-both .grid-active-title {
   display: none; }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .grid-active-title {
     display: none; }
 
@@ -2053,7 +2053,7 @@ body:not(.breakpoint-xs):not(.breakpoint-sm):not(.breakpoint-md) .page-menu nav 
   animation: fade-in-out .3s ease;
   z-index: 3; }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .page-menu #pageMenu-trigger {
     opacity: 1; }
     .page-menu #pageMenu-trigger i {
@@ -2578,7 +2578,7 @@ Main menu - Vertical
 /* ----------------------------------------------------------------
 HEADER: Responsive
 -----------------------------------------------------------------*/
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   /*TopBar*/
   #topbar.topbar-transparent.dark {
     background-color: #fff !important; }
@@ -3090,7 +3090,7 @@ body.search-open #search {
 /* ----------------------------------------------------------------
     Search Responsive
 -----------------------------------------------------------------*/
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   #search #search-logo {
     margin: 0 auto !important;
     max-width: 130px;
@@ -3108,7 +3108,7 @@ body.search-open #search {
     line-height: 8px; }
   #search .search-suggestion-wrapper {
     display: none; } }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   #header[data-transparent="true"] + main {
     top: -122px;
     margin-bottom: -122px;
@@ -3615,7 +3615,7 @@ h6.font-parisienne {
 /* ----------------------------------------------------------------
     Inspiro Slider - Responsive Classes
 -----------------------------------------------------------------*/
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .inspiro-slider .slide-captions h1,
   .inspiro-slider .slide-captions h2 {
     font-size: 40px;
@@ -5054,7 +5054,7 @@ h6.font-parisienne {
   .respond-comment span {
     color: #2250fc; }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .comments {
     padding: 22px 0 30px;
     margin: 0; }
@@ -6423,7 +6423,7 @@ body.breakpoint-xs .text-xl span {
   border-top: 1px solid #e3e3e3; }
 
 /*Resposnive settings*/
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .text-lg,
   .text-lg span {
     font-size: 60px !important;
@@ -6970,7 +6970,7 @@ body.breakpoint-sm .col-3 .flickr-widget img .widget-instagram img {
   margin-bottom: 0;
   padding-bottom: 0; }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .sidebar {
     margin-bottom: 40px; } }
 /*Dark*/
@@ -10035,7 +10035,7 @@ a.btn:not([href]):not([tabindex]),
     pointer-events: none;
     opacity: .6; }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .btn.btn-reveal.btn-reveal-left:hover span {
     left: auto;
     right: auto; }
@@ -11084,7 +11084,7 @@ Carousels
   .owl-carousel.arrows-only .owl-nav [class*="owl-"] i {
     font-size: 28px; }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .owl-carousel .owl-nav [class*="owl-"] {
     width: 32px;
     height: 32px;
@@ -12952,7 +12952,7 @@ img.mfp-img {
 .single-post .post-navigation .post-next {
   right: 0px; }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .post-prev-title,
   .post-next-title {
     display: none; } }
@@ -13045,7 +13045,7 @@ img.mfp-img {
     .call-to-action.cta-right [class*="col-"]:first-child {
       float: right; }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .call-to-action {
     padding: 26px 12px 18px; }
 
@@ -13545,7 +13545,7 @@ body.breakpoint-xl .pricing-table .col-lg-2 .plan-list ul li, body.breakpoint-lg
 /* ----------------------------------------------------------------
     Testimonial - Responsive
 -----------------------------------------------------------------*/
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .testimonial.testimonial-left .testimonial-item {
     text-align: left; }
     .testimonial.testimonial-left .testimonial-item > img {

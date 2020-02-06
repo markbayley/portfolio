@@ -25,10 +25,6 @@ body {
     align-self: center;
   }
 
-
-
-
- 
 .alert{
   text-align: center;
   padding:10px;
@@ -38,39 +34,247 @@ body {
   display:none;
 }
 
-
 #title {
   cursor: default;
-  
+  transition: opacity 3s ease;
   background-image: linear-gradient( to bottom left, rgba(00, 255, 255, 1), #199b74);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent; 
-                  
+  -webkit-text-fill-color: transparent;                  
 }
-
-
 
 #subtitle {
   cursor: default;
+  transition: opacity 3s ease;
   text-shadow: 2px 1px 1px darkslategrey;
   color: white !important; 
   letter-spacing: .075em;;
-
 }
 
 #canvas {
   opacity: 0.2;
   border-radius: 50%;
-
+  webkit-transition: opacity 3s ease;
+	-moz-transition: opacity 3s ease;
+	-o-transition: opacity 3s ease;
+  transition: opacity 3s ease;
 }
 
 #start {
   position: absolute;
-  left: 45%;
+  left: 44%;
   top: 55%;
+  border: 5px solid #FCC43F;
+  font-size: 1em;
+}
+
+#start:hover {
+  color: #03303a !important;
+}
+
+
+
+
+#circ:hover {
+  opacity: 0.8;
+}
+
+#circ {
+  opacity: 0.8;
+  border-radius: 50%;
+  position: absolute;
+  left: 70%;
+  top: 54%;
+  width: 50px;
+  height: 50px;;
+  border: 8px solid #13e8ce;
+  font-size: 16px;
+  line-height: 1.33;
+  webkit-transition: opacity 3s ease;
+	-moz-transition: opacity 3s ease;
+	-o-transition: opacity 3s ease;
+  transition: opacity 3s ease;
+}
+
+#rect {
+  opacity: 0.0;
+  border-radius: 5%;
+  position: absolute;
+  left: 105%;
+  top: 37%;
+  width: 220px;
+  height: 220px;
+  padding: 10px;
+  border: 5px solid #13e8ce;
+  font-size: 18px;
+  line-height: 1.33;
+  webkit-transition: opacity 7s ease;
+	-moz-transition: opacity 7s ease;
+	-o-transition: opacity 7s ease;
+  transition: opacity 7s ease;
+  background-color: #03303a;
+}
+
+#rect:hover {
+  opacity: 1;
+}
+
+.point {
+  width: 0px;
+  height: 5px;
+  background: #13e8ce;
+  webkit-transition: opacity 3s ease;
+	-moz-transition: opacity 3s ease;
+	-o-transition: opacity 3s ease;
+  transition: width 3s ease;
+  position: absolute;
+  top: 58%;
+  left: 74.2%; 
+  opacity: 0.6; 
+  -webkit-transform:
+     translateY(0px)
+     translateX(0px) 
+     rotate(0deg);
+}
+
+.point:hover {
+width: 400px;
 
 }
+
+
+
+
+
+
+@keyframes rot {
+	from {
+		transform: rotate(0deg)
+		           translate(-290px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg)
+		           translate(-290px) 
+		           rotate(360deg);
+	}
+}
+
+
+#port:hover {
+  opacity: 1;
+  border: 8px solid #FCC43F;
+}
+
+#port {
+  opacity: 0.1;
+  position: absolute;
+  top: 52%;
+	left: 46%;
+	margin: -20px;
+  width: 140px;
+  height: 140px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 8px solid #13e8ce;
+  font-size: 14px;
+  line-height: 1.33;
+  webkit-transition: opacity 3s ease;
+	-moz-transition: opacity 3s ease;
+	-o-transition: opacity 3s ease;
+  transition: opacity 3s ease;
+  animation: rot 500s infinite linear;
+  background-color: #184e61;
+
+}
+
+#serv:hover {
+  opacity: 1;
+  border: 8px solid #FCC43F;
+}
+
+#serv {
+  opacity: 0.1;
+  border-radius: 50%;
+  position: absolute;
+  top: 54%;
+  left: 47%;
+  margin: -20px;
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 8px solid #13e8ce;
+  font-size: 14px;
+  line-height: 1.33;
+  webkit-transition: opacity 3s ease;
+	-moz-transition: opacity 3s ease;
+	-o-transition: opacity 3s ease;
+  transition: opacity 3s ease;
+  animation: rot 180s infinite linear;
+  background-color: #184e61;
+
+}
+
+#intro:hover {
+  opacity: 1;
+  border: 8px solid #FCC43F;
+
+}
+
+#intro {
+  opacity: 0.1;
+  position: absolute;
+  top: 56%;
+	left: 48%;
+	margin: -20px;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 8px solid #13e8ce;
+  font-size: 14px;
+  line-height: 1.33;
+  webkit-transition: opacity 3s ease;
+	-moz-transition: opacity 3s ease;
+	-o-transition: opacity 3s ease;
+  transition: opacity 3s ease;
+  animation: rot 100s infinite linear;
+  background-color: #184e61;
+ 
+}
+
+#find:hover {
+  opacity: 1;
+  border: 8px solid #FCC43F;
+}
+
+#find {
+  opacity: 0.1;
+  position: absolute;
+  top: 54%;
+	left: 48%;
+	margin: -20px;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 8px solid #13e8ce;
+  font-size: 18px;
+  line-height: 1.33;
+  webkit-transition: opacity 3s ease;
+	-moz-transition: opacity 3s ease;
+	-o-transition: opacity 3s ease;
+  transition: opacity 3s ease;
+  animation: rot 70s infinite linear;
+
+
+}
+
+
+
+
+
 
 
 

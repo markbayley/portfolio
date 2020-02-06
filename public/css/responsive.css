@@ -1,14 +1,10 @@
-/* ----------------------------------------------------------------
-	Responsive CSS
------------------------------------------------------------------*/
-
-
 /*
 Large devices
 Desktops (≥1200px) 
 */
 
-@media (min-width: 1200px) {
+@media (min-width: 1025px) {
+
     body.boxed #wrapper,
     body.boxed-simple #wrapper,
 	body.boxed .body-inner,
@@ -25,9 +21,7 @@ Desktops (≥1200px)
     }
 
     #prices {
-       height: 0em;
-       width: 0em;
-       padding: 0em;
+       display: none;
     }
 
     #desktop {
@@ -36,67 +30,22 @@ Desktops (≥1200px)
 
     .moreBox {
         width: 33.333%;
-    }
-
-
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    .news-section-wrapper {
-        padding: 0 40px
-    }
-
-    #desktop {
-        display: none;
-    }
-
-    .moreBox {
-        width: 33.333%;
-    }
-
-    #canvas {
-        width: 300px;
-        height: 300px;
     }
 }
 
 
 /*
 Medium devices
-Desktops (≥992px)
 */
 
-@media (max-width: 991px) {
+@media (max-width: 1025px) {
 
-    
-    #header #header-wrap #logo {
-    margin: 0 auto !important;
-    max-width: 130px;
-    position: absolute !important;
-    z-index: 2;
-    }
-    #wrapper,
-	.body-inner {
-        width: 100%;
-        margin: 0;
-    }
-    .p-t-200 {
-        padding-top: 80px !important;
-    }
-    .p-b-200 {
-        padding-bottom: 80px !important;
-    }
-    .text-sm-center {
-        text-align: center !important;
-    }
-    
-
-   
+    .heading-text h2 {
+        font-size: 26px !important;
+     }
 
     #content {
-       height: 0em;
-       width: 0em;
-       padding: 0em;
+       display: none;
     }
 
     .moreBox {
@@ -108,23 +57,33 @@ Desktops (≥992px)
     }
 
     #start {
-        margin-top: 10%;
+        display: none;
     }
 
+    #circ {
+        display: none;
+    }
+
+    #section6 {
+        display: none;
+    }
+
+    #counters {
+        display: none;
+    }
+
+}
 
 
 
-
-
-@media (min-width: 400px) and (max-width: 967px) {
+@media (max-width: 767px) {
 
     .heading-text h2 {
        font-size: 26px !important;
     }
 
     #subtitle {
-        font-size: 16px !important;
-       
+        font-size: 16px !important;     
     }
 
     #title {
@@ -139,8 +98,7 @@ Desktops (≥992px)
     #counters {
         display: none;
     }
-
-    
+   
     #blockchain { 
         display: none;
      }  
@@ -153,11 +111,9 @@ Desktops (≥992px)
     #services div {
         margin-bottom: 0px !important;
         margin-top: 0px !important;
-
     }
 
-    #welcome div {
-        
+    #welcome div {       
         margin-top: 0px !important;
     }
 
@@ -178,14 +134,15 @@ Desktops (≥992px)
     }
     
     #start {
-        position: absolute;
-        left: 40%;
-        
+        display: none;
+    }
+
+    #circ {
+        display: none;
     }
 }
 
-
-@media (min-width: 1px) and (max-width: 400px) {
+@media (max-width: 400px) {
 
     .moreBox {
         width: 100%;
@@ -198,15 +155,14 @@ Desktops (≥992px)
     #start {
         position: absolute;
         left: 35%;
-        margin-top: 20%;
-        
+        margin-top: 20%;      
     }
 
     .heading-text h2 {
         font-size: 26px !important;
-     }
+    }
 
-     #section6 {
+    #section6 {
         display: none;
     }
 
@@ -214,15 +170,16 @@ Desktops (≥992px)
         display: none;
     }
 
-    
     #blockchain { 
         display: none;
      } 
 
-  
+    #circ {
+        display: none;
+    }
+
     h4 {
         letter-spacing: 0.14em;
- 
     }
 
     section {
@@ -230,17 +187,10 @@ Desktops (≥992px)
     }
 
     #contact {
-        margin-top: 10%;
-        
+        margin-top: 10%;   
     }
 
     .contact {
         padding-top: 10%;
     }
-
-
 }
-
-
-
-
