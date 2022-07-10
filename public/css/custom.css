@@ -103,10 +103,10 @@ body {
   left: 80%;
   top: 49%;
   width: 220px;
-  height: 100px;
+  /* height: 100px; */
   padding: 10px;
   border: 5px solid #13e8ce;
-  font-size: 14px;
+  /* font-size: 14px; */
   line-height: 1.33;
   webkit-transition: opacity 7s ease;
 	-moz-transition: opacity 7s ease;
