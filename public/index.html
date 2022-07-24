@@ -79,7 +79,7 @@
                         </h4>
                         <!-- end: Captions -->
                         <!-- Clock -->
-                        <canvas id="canvas" class="btn-dark scroll-to" width="420px" height="420px" style="border: 2px solid #13e8ce;"></canvas><br>
+                        <canvas id="canvas" class="btn-dark scroll-to" width="220px" height="220px" style="border: 8px solid #13e8ce;"></canvas><br>
                         <a id="start" class="btn btn-md btn-outline text-light scroll-to" onclick="play()" href="#about">
                             GET STARTED
                         </a>
@@ -97,8 +97,11 @@
                          <!-- Help -->  
                         <div class="point"></div>
                         <a><button id="circ" class="btn-info"><i class="fa fa-question"></i></button></a>
-                        <a><button id="rect" class="btn-info" >HOVER YOUR MOUSE OVER THE CIRCULAR TIMEPIECE TO USE INTERACTIVE MENU</button></a>
+                        <a><button id="rect" class="btn-info" >CLICK ON A DISC TO USE THE INTERACTIVE MENU</button></a>
                         <!-- end: Help --> 
+                        <!-- <div class="point2"></div>
+                        <a><button id="circ2" class="btn-info"><i class="fa fa-question"></i></button></a>
+                        <a><button id="rect2" class="btn-info" >CLICK ON A DISC TO USE THE INTERACTIVE MENU</button></a> -->
                     </div>     
                 </div>
             </div>
@@ -281,10 +284,10 @@
                 <div class="portfolio-item img-zoom ct-photography ct-media ct-branding ct-Media">
                     <div class="portfolio-item-wrap">
                         <!-- <a href="https://markbayley.github.io/react/bakery/index.html"> -->
-                            <a href="https://markbayley.github.io/covid19/index.html">
+                            <a href="https://markbayley.github.io/covid19/">
                             <div class="portfolio-image">
-                                <a href="https://markbayley.github.io/covid19/index.html">
-                                    <img src="images/covidratio.png" alt="Bakery"></a>
+                                <a href="https://markbayley.github.io/covid19/">
+                                    <img src="images/covidratio.png" alt="Covid"></a>
                             </div>
                             <div class="portfolio-description">
                                 <h3>Covid-19 App</h3>
@@ -754,7 +757,7 @@
     <script src="js/plugins/components/particles-animation.js" type="text/javascript"></script>
     <!-- end: Partical Js files  -->
     <!-- Clock -->
-    <script>
+    <!-- <script>
         var canvas = document.getElementById("canvas");
 		var ctx = canvas.getContext("2d");
 		ctx.strokeStyle = '#13e8ce';
@@ -804,13 +807,17 @@
 			ctx.fillText(time+":"+mil, 150, 265);  
 		}
 		setInterval(renderTime, 40);
-    </script>
+    </script> -->
     <!-- end: Clock -->
     <!-- Hover -->
     <script>
         $(function() {
         $('#start').hover(function() {
             $('#canvas').css('opacity', '0.7');
+            $('#port').css('opacity', '0.9');
+            $('#serv').css('opacity', '0.9');
+            $('#intro').css('opacity', '0.9');
+            $('#find').css('opacity', '0.9');
         }, function() {
             // on mouseout, reset the background colour
             $('#canvas').css('opacity', '0.2');
