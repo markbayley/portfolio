@@ -117,9 +117,9 @@ Medium devices
         margin-top: 0px !important;
     }
 
-    #contact div {
+    /* #contact div {
         margin-top: 35px !important;    
-    }
+    } */
 
     .contact form {
         grid-gap:20px;

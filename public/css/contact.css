@@ -28,7 +28,7 @@ ul{
 }
 
 .wrapper > *{
-  padding: 1em;
+  padding: 0em;
 }
 
 .company-info{
@@ -42,6 +42,7 @@ ul{
 
 .contact{
   background:#fff;
+  max-width:870px;
 }
 
 /* FORM STYLES */
